@@ -4,55 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="main.js"></script>
     <title>Hemsida</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div>
-            <h2><a href="Hemsidainlämning.html"> JS1 GRUPP 6
-            </a></h2>
-        </div>
-            <ul>
-                <li><a href="Hemsidainlämning.html">Home</a> </li>
-                <li><a href="#">Info</a> </li>
-                <li><a href="#">About</a></li>
+
+        <form id="myForm">
+
+            <label for="">mata in Genre:</label><br>
+            <input type="text" name="genre" id="genre"><br>          
+           
+            <label for="">mata in Titel:</label><br>
+            <input type="text" name="titel" id="titel"><br>
+                      
+             <label for="">mata in år:</label><br>
+             <input type="number" onfocus="this.value = ''" name="år" id="year"><br>
+             <br>
+            
+             <button type="button" onclick="addMovie()">Add input</button>
+             <button type="button" onclick="printOut(movies)">show movies</button><br>
+            </form>
+        <table>
+            <tr>
+                <th>Genre</th>
+                <th>Titel</th>
+                <th>År</th>
+            </tr>
+            <tbody id="myTable">
                 
+            </tbody>
 
-            </ul>
-        </nav>
+        </table>    
+        
 
-        <div class="inputs">
-            <div class="input1">
-            <label for="">mata in Genre:</label>
-            <input type="text" name="genre" id="input1">
-            
-        </div>
-            
-            
-            <div class="input2">
-            <label for="">mata in Titel:</label>
-            <input type="text" name="titel" id="input2">
-            
-            </div>
-
-            <div class="input3">
-                <label for="">mata in år:</label>
-                <input type="number" name="år" id="input3">
-                
-                </div>
-                <button type="button" onclick="">Add input</button>
-            
-
-
-        </div>
-        <div class ="display">
-
-        </div>
-
-    </div>
+    
 </body>
 </html>
