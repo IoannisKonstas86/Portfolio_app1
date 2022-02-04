@@ -1,7 +1,8 @@
-import { Facebook, Instagram, LinkedIn, MenuBook, Pinterest, SettingsPowerRounded, Twitter } from '@material-ui/icons'
+import { Facebook, Instagram, LinkedIn, MenuBook, SettingsPowerRounded, Twitter } from '@material-ui/icons'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './styles/Main.scss'
-import man from './assets/man.png'
+import me from './bild/me.png'
 
 const Main = () => {
     return (
@@ -12,22 +13,21 @@ const Main = () => {
                 <div className="main__content">
 
                     <div className="text">
-                            <p>Hey There !</p>
-                            <h1>I am Bob Russer</h1>
-                            <p>Creative Art Director & Designer</p>
+                            <p>Hej där !</p>
+                            <h1>Jag heter Ioannis</h1>
+                            <p>Front-End Development Student på kYH</p>
 
                             <div className="icons">
-                                <Twitter className='icon'/>
-                                <Instagram className='icon'/>
-                                <Facebook className='icon'/>
-                                <LinkedIn className='icon'/>
-                                <Pinterest className='icon'/>
+                                <a href="https://www.Twitter.com"><Twitter className='icon'/></a>
+                                <a href="https://www.facebook.com"><Facebook className='icon'/></a>
+                                <a href="https://www.linkedn.com"><LinkedIn className='icon'/></a>
+                                <a href="https://www.instagram.com"><Instagram className='icon'/></a>                                           
                             </div>
 
 
                     <div className="buttons">
-                        <button>See My Work</button>
-                        <button>Hire Me</button>
+                        <button>Mitt Portfolio</button>
+                        <button><Link to='/contact'></Link>Anställ mig</button>
                     </div>
 
                     </div>
@@ -37,7 +37,7 @@ const Main = () => {
 
 
                 <div className="main__img">
-                    <img src={man} alt="" />
+                    <img src={me} alt="" />
                 </div>
 
 

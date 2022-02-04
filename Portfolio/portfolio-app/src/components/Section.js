@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/Section.scss'
-import man2 from './assets/man2.jpg'
+import man2 from './bild/who_am.png'
 
 const Section = () => {
     return (
@@ -16,13 +16,10 @@ const Section = () => {
 
 
                 <div className="section__content">
-                    <h1>Who is Bob</h1>
-                    <p>5 years experience in Web Development</p>
-                    <p>Professional UI & UX Designer</p>
-                    <p>Project Manager at Google</p>
-                    <p>8 years experience in Programming</p>
-                    <p>Javascript Developer</p>
-                    <p>React js Developer</p>
+                    <h1>Vem är jag</h1>
+                    <p>Mycket motiverad person med mer än 8 års erfarenhet inom IT-sektorn, börjar min resa med hårdvarureparation och utvecklar gradvis min skicklighet inom andra områden som nätverksteknik. De senaste 3 åren har jag lärt mig själv hur man
+                         kodar genom att göra små projekt och nyligen började jag en yrkesutbildning på KYH.</p>
+                    
                 </div>
 
 

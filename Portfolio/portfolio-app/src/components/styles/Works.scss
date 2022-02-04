@@ -1,80 +1,84 @@
+* {
+  font-family: "Roboto Slab";
+}
+
 .works {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex-wrap;
+  align-items: center;
 }
 
-
-
-@media (min-width:50em) {
-    .work__section {
-        padding: 15px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-        gap: 1.5rem;
-    }
+@media (min-width: 50em) {
+  .work__section {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background-color: rgba(62, 7, 189, 0.126);
+  }
 }
 
+.title {
+  width: 100%;
+  flex: 1;
+  background-color: rgba(62, 7, 189, 0.126);
+  h1 {
+    text-align: center;
+    color: rgb(90, 88, 88);
+    padding-top: 2rem;
+    font-family: "Roboto Slab", serif;
+  }
+}
 .cards {
-    position: relative;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid rgb(158, 145, 145);
+  margin-top: 2rem;
+
+  img {
+    height: 100%;
+  }
+
+  button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
     cursor: pointer;
-    border: 3px solid rgb(158, 145, 145);
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
 
-    img {
-        height: 100%;
+    &:hover {
+      background: #fff;
+      color: rgb(90, 88, 88);
     }
+  }
 
-    button {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        background: transparent;
-        border: 3px solid rgb(255, 255, 255);
-        padding: 10px 20px;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-        opacity: 0;
-        font-size: 20px;
-        font-weight: bolder;
-        text-transform: uppercase;
+  &:hover button {
+    opacity: 1;
+    transition: 450ms;
+  }
 
-        &:hover {
-            background: #fff;
-            color: firebrick;
-        }
-    }
-
-
-    &:hover button {
-        opacity: 1;
-        transition: 450ms;
-    }
-
-    &:hover img {
-        opacity: .6;
-    }
+  &:hover img {
+    opacity: 0.6;
+  }
 }
 
-
-
-
-
-
-
-
-@media(max-width:800px){
-    .work__section {
+@media (max-width: 800px) {
+  .work__section {
     padding: 12px;
     display: grid;
     gap: 1.335rem;
 
-
     .cards {
-        padding: 15px;
+      padding: 15px;
     }
-
-}}
-
-    
+  }
+}
